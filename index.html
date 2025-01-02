@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Break Meditation Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h1, h3 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Register for Code Break</h1>
+    <h3>Reboot. Realign. Recharge.</h3>
+    <form id="registrationForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="phone">Mobile Number (Optional)</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+      <label for="session">Preferred Session Time</label>
+      <select id="session" name="session" required>
+        <option value="">Select a time</option>
+        <option value="morning">Morning Flow (9:00 AM - 9:30 AM)</option>
+        <option value="midday">Midday Reset (1:00 PM - 1:30 PM)</option>
+        <option value="evening">Evening Recharge (5:00 PM - 5:30 PM)</option>
+      </select>
+
+      <label for="headphones">Bring Your Own Headphones?</label>
+      <select id="headphones" name="headphones" required>
+        <option value="">Select an option</option>
+        <option value="yes">Yes, I’ll bring my own</option>
+        <option value="no">No, I’ll need headphones provided</option>
+      </select>
+
+      <label for="experience">Meditation Experience Level</label>
+      <select id="experience" name="experience" required>
+        <option value="">Select your level</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <label for="goal">Primary Goal for the Session</label>
+      <textarea id="goal" name="goal" placeholder="Relax, focus, recharge, etc." required></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you for registering! Details will be sent to your email.");
+    });
+  </script>
+</body>
+</html>
+
+
